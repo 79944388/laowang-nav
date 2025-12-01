@@ -15,15 +15,25 @@
 
 ### 📸 效果展示
 
-````carousel
-![深色主题 - 多分类布局](docs/screenshots/demo-1-dark-theme.png)
-<!-- slide -->
-![紫色主题 - 优雅渐变](docs/screenshots/demo-2-purple-theme.png)
-<!-- slide -->
-![编辑模式 - 快速配置](docs/screenshots/demo-3-edit-mode.png)
-<!-- slide -->
-![主题选择器 - 15+ 精美主题](docs/screenshots/demo-4-theme-selector.png)
-````
+<div align="center">
+
+<img src="docs/screenshots/demo-1-dark-theme.png" alt="深色主题 - 多分类布局" width="800"/>
+
+*深色主题 - 多分类布局*
+
+<img src="docs/screenshots/demo-2-purple-theme.png" alt="紫色主题 - 优雅渐变" width="800"/>
+
+*紫色主题 - 优雅渐变*
+
+<img src="docs/screenshots/demo-3-edit-mode.png" alt="编辑模式 - 快速配置" width="800"/>
+
+*编辑模式 - 快速配置*
+
+<img src="docs/screenshots/demo-4-theme-selector.png" alt="主题选择器 - 15+ 精美主题" width="800"/>
+
+*主题选择器 - 15+ 精美主题*
+
+</div>
 
 > 💡 **提示**: 支持 15+ 款精美主题，完整响应式设计，完美适配 PC、平板、手机三端。
 
