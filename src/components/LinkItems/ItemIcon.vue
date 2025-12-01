@@ -230,7 +230,10 @@ export default {
     },
     /* Called when initial icon has resulted in 404. Attempts to find new icon */
     getFallbackIcon() {
-      if (this.attemptedFallback) return undefined; // If this is second attempt, then give up
+      if (this.attemptedFallback) {
+        // Final fallback: use generative icon based on URL
+        return this.getGenerativeIcon(this.url || this.icon || 'default');
+      }
       const iconType = this.iconType || '';
       const markAsAttempted = () => { this.broken = false; this.attemptedFallback = true; };
       if (iconType.includes('favicon')) { // Specify fallback for favicon-based icons
@@ -243,7 +246,9 @@ export default {
         markAsAttempted();
         return this.getHomeLabIcon(this.icon, iconCdns.homeLabIconsFallback);
       }
-      return undefined;
+      // If no specific fallback, use generative icon
+      markAsAttempted();
+      return this.getGenerativeIcon(this.url || this.icon || 'default');
     },
   },
 };
