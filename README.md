@@ -14,71 +14,58 @@
 
 通过单一页面访问所有自托管服务和常用网站，让您的数字生活井井有条
 
+<p align="center">
+  <a href="https://zeabur.com/templates/2Q624P">
+    <img src="https://zeabur.com/button.svg" alt="Deploy on Zeabur"/>
+  </a>
+</p>
+
 </div>
 
 ---
 
-## 📸 效果展示
+## ✨ 特性
+
+- 🚀 **极速加载**: 经过优化的代码，秒级响应。
+- 🎨 **多主题支持**: 内置多种精美主题，支持自定义 CSS。
+- ☁️ **多云一键部署**: 支持 Zeabur、Render 等平台一键部署。
+- 🔍 **集成搜索引擎**: 内置 Google, Baidu, Bing, GitHub 等常用搜索。
+- 🌦️ **实时天气**: 首页集成实时天气显示。
+- 📱 **响应式设计**: 完美适配手机、平板和桌面端。
+- 🔒 **隐私优先**: 所有数据掌握在自己手中。
 
 <div align="center">
 
-<img src="docs/screenshots/demo-1-dark-theme.png" alt="深色主题 - 多分类布局" width="800"/>
+| 主页预览 | 搜索功能 |
+| :---: | :---: |
+| ![Home](docs/screenshots/screenshot-1.png) | ![Search](docs/screenshots/screenshot-2.png) |
 
-*深色主题 - 清爽简洁的卡片式布局*
+| 移动端适配 | 设置面板 |
+| :---: | :---: |
+| ![Mobile](docs/screenshots/screenshot-3.png) | ![Settings](docs/screenshots/screenshot-4.png) |
 
-<img src="docs/screenshots/demo-2-purple-theme.png" alt="紫色主题 - 优雅渐变" width="800"/>
-
-*紫色主题 - 优雅的渐变色彩*
-
-<img src="docs/screenshots/demo-3-edit-mode.png" alt="编辑模式 - 快速配置" width="800"/>
-
-*编辑模式 - 可视化配置界面*
-
-<img src="docs/screenshots/demo-4-theme-selector.png" alt="主题选择器 - 15+ 精美主题" width="800"/>
-
-*主题选择器 - 15+ 款精美主题任意切换*
+| 多彩主题 |
+| :---: |
+| ![Themes](docs/screenshots/screenshot-5.png) |
 
 </div>
-
----
-
-## ✨ 功能特性
-
-### 🎨 界面与主题
-- **🌈 15+ 内置主题** - 深色、浅色、流光、赛博朋克、樱花等精美主题
-- **🎞️ 动态背景** - 支持视频、图片、渐变背景
-- **📱 响应式设计** - 完美适配桌面、平板、移动端
-- **🎭 多种视图模式** - 默认、工作区、极简等多种布局
-
-### 🔧 功能特性
-- **🔄 即时配置** - 可视化编辑器，实时预览更改
-- **🧩 拖拽排序** - 随意调整应用和分类顺序
-- **🔍 智能搜索** - 快速查找应用，支持快捷键
-- **📦 云端同步** - 配置备份到云端，多设备同步
-- **🌍 多语言支持** - 中文、英文等多种语言
-- **⚡ PWA 支持** - 可安装为桌面应用
-
-### 🚦 状态与监控
-- **💡 状态指示器** - 实时显示服务运行状态
-- **📊 内置小组件** - 天气、时间、系统资源等
-- **🔔 智能通知** - 服务异常实时提醒
-
-### 🔐 安全与管理
-- **🔒 访问控制** - 支持密码保护
-- **👥 多用户管理** - 不同用户不同权限
-- **📝 配置版本控制** - 支持配置导入导出
 
 ---
 
 ## 🚀 快速开始
 
-### ☁️ 一键部署到云平台
+### 方式一：Zeabur 一键部署（推荐）
 
-```
+点击页面顶部的 "Deploy on Zeabur" 按钮，即可免费一键部署属于你的导航站。
 
-启动：
+### 方式二：Docker 部署
+
 ```bash
-docker-compose up -d
+docker run -d \
+  -p 8080:80 \
+  --name laowang-nav \
+  --restart always \
+  ghcr.io/tony-wang1990/laowang-nav:latest
 ```
 
 ---
