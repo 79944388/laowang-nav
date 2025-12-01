@@ -1,7 +1,7 @@
 <template>
  <transition name="slide-fade">
   <div id="loading" v-if="isLoading" :class="c" @click="c = 'hide'">
-    <h2>Dashy</h2>
+    <h2>LaoWang Nav</h2>
     <div class="inner-container">
       <p>{{ $t('splash-screen.loading')}}</p>
       <span class="dots-cont">

@@ -1,0 +1,352 @@
+pageInfo:
+  title: Tony-Tony，Go ! Go ! Go !
+  description: ''
+  navLinks:
+    - title: GitHub
+      path: https://github.com/tony-wang1990
+      target: newtab
+appConfig:
+  theme: glass-2
+  layout: auto
+  iconSize: small
+  statusCheck: true
+  language: cn
+  startingView: default
+  defaultOpeningMethod: newtab
+  statusCheckInterval: 0
+  faviconApi: allesedv
+  routingMode: history
+  enableMultiTasking: false
+  widgetsAlwaysUseProxy: false
+  webSearch:
+    disableWebSearch: false
+    searchEngine: duckduckgo
+    openingMethod: newtab
+    searchBangs: {}
+  enableFontAwesome: true
+  enableMaterialDesignIcons: false
+  hideComponents:
+    hideHeading: false
+    hideNav: false
+    hideSearch: false
+    hideSettings: false
+    hideFooter: false
+  auth:
+    enableGuestAccess: false
+    users: []
+    enableOidc: false
+    oidc:
+      adminRole: 'false'
+      adminGroup: 'false'
+    enableHeaderAuth: false
+    headerAuth:
+      userHeader: REMOTE_USER
+      proxyWhitelist: []
+    enableKeycloak: false
+  showSplashScreen: false
+  preventWriteToDisk: false
+  preventLocalSave: false
+  disableConfiguration: false
+  disableConfigurationForNonAdmin: false
+  allowConfigEdit: true
+  enableServiceWorker: false
+  disableContextMenu: false
+  disableUpdateChecks: false
+  disableSmartSort: false
+  enableErrorReporting: false
+sections:
+  - name: 状态监控
+    icon: fas fa-star
+    items:
+      - title: 养鸡场1场
+        description: RN
+        icon: favicon
+        url: https://vps.wangyatao.eu.org/
+        id: 0_109871_
+      - title: OCI-Y-RN
+        description: Y探长
+        icon: favicon
+        url: https://oci.wangyatao.eu.org/
+        id: 1_109871_ociyrn
+      - title: OCI-Y-GCP-678
+        description: Y探长
+        icon: favicon
+        url: https://oci.keji6.eu.org/
+        id: 2_109871_ociygcp
+      - title: OCI-Y-GCP-789
+        description: Y探长
+        icon: favicon
+        url: https://oci.keji8.eu.org/
+        id: 3_109871_ociygcp
+      - title: 养鸡场2场
+        description: GCP-789
+        icon: favicon
+        url: https://vps.keji8.eu.org/
+        id: 4_109871_
+      - title: OCI-Y-GCP-567
+        description: Y探长
+        icon: favicon
+        url: https://oci.yataowang.eu.org/
+        id: 5_109871_ociygcp
+      - title: 养鸡场3场
+        description: GCP-567
+        icon: favicon
+        url: https://vps.yataowang.eu.org/
+        id: 6_109871_
+      - title: 养鸡场4场
+        description: GCP-678
+        icon: favicon
+        url: https://vps.keji6.eu.org
+        id: 7_109871_
+      - title: komari监控
+        icon: favicon
+        url: https://kr.199060.xyz
+        id: 8_109871_komari
+    displayData:
+      sortBy: most-used
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+  - name: 实用工具
+    icon: fas fa-star
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: 伪装度查询
+        icon: favicon
+        url: https://www.yalala.com/
+        id: 0_98338_
+      - title: IP查询
+        icon: favicon
+        url: https://ping0.cc/
+        id: 1_98338_ip
+      - title: cloudflare
+        icon: favicon
+        url: https://cloudflare.com/
+        statusCheckHeaders: >-
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+        id: 2_98338_cloudflare
+      - title: github-YGKKK
+        icon: favicon
+        url: https://github.com/yonggekkk
+        id: 3_98338_githubygkkk
+      - title: tailscale
+        icon: favicon
+        url: https://login.tailscale.com/
+        statusCheckHeaders: >-
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+        statusCheck: false
+        id: 4_98338_tailscale
+      - title: OneDrive
+        description: ''
+        icon: favicon
+        url: >-
+          https://m365.cloud.microsoft/search/?fromcode=cmmiadtp424&refOrigin=Other&origindomain=Office&auth=1&client-request-id=37dd791c-7b5c-468c-96b8-c12c1c670999
+        id: 5_98338_onedrive
+      - title: 测速网站
+        icon: favicon
+        url: https://www.speedtest.net/zh-Hans
+        id: 6_98338_
+      - title: 老王工具箱
+        description: github
+        icon: favicon
+        url: https://github.com/eooce/ssh_tool
+        id: 7_98338_
+      - title: pp.ua
+        description: '678'
+        icon: favicon
+        url: https://nic.ua/
+        id: 8_98338_ppua
+  - name: 专业日语学习网站
+    icon: fas fa-star
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: 咖啡
+        description: ''
+        icon: favicon
+        url: https://ptcafe.club/messages.php
+        id: 0_209391_
+      - title: vertex-KF
+        icon: favicon
+        url: http://132.145.78.202:3000/
+        id: 1_209391_vertexkf
+      - title: QBIT-KF
+        icon: favicon
+        url: http://132.145.78.202:8080
+        id: 2_209391_qbitkf
+  - name: 谷歌全家桶
+    icon: fas fa-star
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Gmail
+        icon: favicon
+        url: https://mail.google.com/
+        id: 0_134423_gmail
+      - title: YouTube
+        icon: favicon
+        url: https://www.youtube.com/
+        id: 1_134423_youtube
+      - title: GOOGLE
+        icon: favicon
+        url: https://www.google.com/
+        id: 2_134423_google
+      - title: google voice
+        icon: favicon
+        url: https://voice.google.com/u/0/messages
+        id: 3_134423_googlevoice
+  - name: 甲骨文专区
+    icon: fas fa-star
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: 金箍棒教程
+        icon: favicon
+        url: https://telegra.ph/oraclehelp-03-07
+        id: 0_136878_
+      - title: 全区登录
+        icon: favicon
+        url: https://cloud.oracle.com/?tenant=
+        id: 1_136878_
+      - title: 甲骨文教程
+        icon: favicon
+        url: https://www.cnabc.de
+        id: 2_136878_
+      - title: 2FA验证
+        icon: favicon
+        url: https://2fa.run/
+        id: 3_136878_fa
+      - title: 甲骨文测速
+        icon: favicon
+        url: https://oracle.7fk.su/
+        id: 4_136878_
+  - name: 论坛工具
+    icon: fas fa-star
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: 恩山论坛
+        icon: favicon
+        url: https://www.right.com.cn/
+        id: 0_103025_
+      - title: nodeseek论坛
+        icon: favicon
+        url: https://www.nodeseek.com/
+        statusCheckHeaders: >-
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+        statusCheck: false
+        id: 1_103025_nodeseek
+      - title: lowendtalk
+        icon: favicon
+        url: https://lowendtalk.com/
+        statusCheckHeaders: >-
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+        statusCheck: false
+        id: 2_103025_lowendtalk
+      - title: 科技LION
+        icon: favicon
+        url: https://kejilion.blogspot.com
+        id: 3_103025_lion
+  - name: 云服务器
+    icon: fas fa-star
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: racknerd
+        icon: favicon
+        url: https://my.racknerd.com/clientarea.php
+        id: 0_89767_racknerd
+      - title: 阿里云国际
+        icon: favicon
+        url: >-
+          https://ecs.console.aliyun.com/home?accounttraceid=1cfbe0847a6841f58f7780dbd405fb46iwzy#/
+        id: 1_89767_
+      - title: 谷歌云GCP
+        icon: favicon
+        url: >-
+          https://console.cloud.google.com/welcome?hl=zh-cn&project=regal-ceiling-358307
+        id: 2_89767_gcp
+  - name: AI工具箱
+    icon: fas fa-star
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: gemini
+        icon: favicon
+        url: https://gemini.google.com/
+        id: 0_76695_gemini
+      - title: copilot
+        icon: favicon
+        url: https://copilot.microsoft.com/
+        id: 1_76695_copilot
+      - title: grok
+        icon: favicon
+        url: https://grok.com/
+        statusCheckHeaders: >-
+          User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+          AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+        statusCheck: false
+        id: 2_76695_grok
+      - title: 豆包AI
+        icon: favicon
+        url: https://www.doubao.com/chat/
+        id: 3_76695_ai
+      - title: chatgpt
+        icon: favicon
+        url: https://chatgpt.com/
+        id: 4_76695_chatgpt
+  - name: 老王导航
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: 老王导航
+        icon: favicon
+        url: https://www.199060.xyz/
+        id: 0_119218_
+      - title: 订阅到期管理
+        description: CF-WORKER
+        icon: favicon
+        url: https://subscription-manager.wangyatao678.workers.dev/
+        id: 1_119218_
+      - title: 老王TV
+        icon: favicon
+        url: https://wyt.zeabur.app/
+        id: 2_119218_tv

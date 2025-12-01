@@ -88,6 +88,7 @@ const pages = {
 
 // Export the main Vue app config
 module.exports = {
+  lintOnSave: false,
   publicPath,
   pwa,
   integrity,

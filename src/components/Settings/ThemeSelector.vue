@@ -3,11 +3,13 @@
     <div>
     <span class="theme-label">{{ $t('settings.theme-label') }}</span>
     <v-select
-      :options="themeNames"
+      :options="translatedThemes"
       v-model="selectedTheme"
       :value="$store.getters.theme"
       class="theme-dropdown"
       :tabindex="-2"
+      label="label"
+      :reduce="theme => theme.code"
       @input="themeChangedInUI"
     />
     </div>
@@ -47,7 +49,14 @@ export default {
       themeConfiguratorOpen: false, // Control the opening of theme config popup
     };
   },
-  computed: {},
+  computed: {
+    translatedThemes() {
+      return this.themeNames.map(theme => ({
+        label: this.getThemeLabel(theme),
+        code: theme,
+      }));
+    },
+  },
   mounted() {
     this.initializeTheme();
   },
@@ -63,6 +72,54 @@ export default {
         this.$store.commit(Keys.SET_MODAL_OPEN, false);
         this.themeConfiguratorOpen = false;
       }
+    },
+    getThemeLabel(theme) {
+      const themeMap = {
+        default: '默认',
+        glass: '毛玻璃',
+        callisto: '木卫四',
+        material: '质感设计',
+        'material-dark': '质感暗色',
+        'dashy-docs': '文档主题',
+        colorful: '多彩',
+        dracula: '吸血鬼',
+        'one-dark': '暗黑一号',
+        lissy: 'Lissy',
+        'cherry-blossom': '樱花',
+        'nord-frost': '北欧霜',
+        nord: '北欧',
+        argon: '氩气',
+        fallout: '辐射',
+        whimsy: '奇思妙想',
+        oblivion: '遗忘',
+        adventure: '冒险',
+        crayola: '蜡笔',
+        'deep-ocean': '深海',
+        'minimal-dark': '极简暗',
+        'minimal-light': '极简亮',
+        thebe: '底比斯',
+        matrix: '黑客帝国',
+        'matrix-red': '黑客帝国红',
+        'color-block': '色块',
+        'raspberry-jam': '树莓酱',
+        bee: '蜜蜂',
+        tiger: '老虎',
+        glow: '发光',
+        'glow-dark': '暗夜发光',
+        vaporware: '蒸汽波',
+        cyberpunk: '赛博朋克',
+        'material-original': '质感原版',
+        'material-dark-original': '质感暗原版',
+        'high-contrast-dark': '高对比暗',
+        'high-contrast-light': '高对比亮',
+        'adventure-basic': '冒险基础',
+        basic: '基础',
+        tama: '多摩',
+        neomorphic: '新拟态',
+        'glass-2': '毛玻璃 II',
+        'night-bat': '夜蝙蝠',
+      };
+      return themeMap[theme] || theme;
     },
   },
 };

@@ -62,19 +62,19 @@ const router = new Router({
       path: '/',
       name: `landing-page-${startingView}`,
       component: getStartingComponent(),
-      meta: makeMetaTags('Home Page'),
+      meta: makeMetaTags('LaoWang Nav'),
     },
     { // Default home page
       path: routePaths.home,
       name: 'home',
       component: Home,
-      meta: makeMetaTags('Home Page'),
+      meta: makeMetaTags('LaoWang Nav'),
     },
     { // View only single section
       path: `${routePaths.home}/:section`,
       name: 'home-section',
       component: Home,
-      meta: makeMetaTags('Home Page'),
+      meta: makeMetaTags('LaoWang Nav'),
     },
     { // Workspace view page
       path: routePaths.workspace,
@@ -102,7 +102,7 @@ const router = new Router({
       path: routePaths.about,
       name: 'about', // We lazy load the About page so as to not slow down the app
       component: () => import('./views/About.vue'),
-      meta: makeMetaTags('About Dashy'),
+      meta: makeMetaTags('About LaoWang Nav'),
     },
     { // The export config page
       path: routePaths.download,
@@ -144,7 +144,7 @@ router.beforeEach(async (to, from, next) => {
 router.afterEach((to) => {
   progress.end();
   Vue.nextTick(() => {
-    document.title = to.meta.title || 'Dashy';
+    document.title = to.meta.title || 'LaoWang Nav';
   });
 });
 

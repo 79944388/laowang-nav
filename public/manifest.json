@@ -1,7 +1,7 @@
 {
-  "name": "Dashy Web",
-  "short_name": "Dashy",
-  "description": "A Dashboard for your Homelab",
+  "name": "LaoWang Nav",
+  "short_name": "LaoWang Nav",
+  "description": "您的个人导航站",
   "scope": "/",
   "start_url": "./",
   "display": "standalone",

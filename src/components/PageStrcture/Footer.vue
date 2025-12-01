@@ -4,10 +4,8 @@
     <span v-if="text" v-html="text"></span>
     <!-- Default footer -->
     <span v-else>
-      <a :href="defaultInfo.projectUrl">Dashy</a> is free & open source
-      - licensed under <a :href="defaultInfo.licenseUrl">{{defaultInfo.license}}</a>,
+      <a :href="defaultInfo.projectUrl">LaoWang Nav</a> is a personal dashboard.
       © <a :href="defaultInfo.authorUrl">{{defaultInfo.authorName}}</a> {{defaultInfo.date}}.
-      Get support on GitHub, at <a :href="defaultInfo.repoUrl">{{defaultInfo.repoName}}</a>.
     </span>
   </footer>
 </template>
@@ -24,14 +22,14 @@ export default {
   data() {
     return {
       defaultInfo: {
-        authorName: 'Alicia Sykes',
-        authorUrl: 'https://as93.net',
+        authorName: 'LaoWang',
+        authorUrl: 'https://github.com/tony-wang1990',
         license: 'MIT',
-        licenseUrl: 'https://gist.github.com/Lissy93/143d2ee01ccc5c052a17',
+        licenseUrl: 'https://github.com/tony-wang1990/laowang-nav/blob/master/LICENSE',
         date: `${new Date().getFullYear()}`,
-        repoUrl: 'https://github.com/lissy93/dashy',
-        repoName: 'Lissy93/Dashy',
-        projectUrl: 'https://dashy.to',
+        repoUrl: 'https://github.com/tony-wang1990/laowang-nav',
+        repoName: 'tony-wang1990/laowang-nav',
+        projectUrl: 'https://github.com/tony-wang1990/laowang-nav',
       },
     };
   },

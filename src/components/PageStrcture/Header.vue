@@ -1,11 +1,9 @@
 <template>
     <header v-if="componentVisible">
-      <PageTitle
-        v-if="titleVisible"
-        :title="pageInfo.title"
-        :description="pageInfo.description"
-        :logo="pageInfo.logo"
-      />
+      <div class="logo-container">
+        <h1 class="text-logo">LaoWang Nav</h1>
+      </div>
+      <!-- PageTitle removed to prevent duplicate text -->
       <Nav v-if="navVisible" :links="pageInfo.navLinks" class="nav" />
     </header>
 </template>
@@ -56,5 +54,25 @@ export default {
     @include phone {
       flex-direction: column-reverse;
     }
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+  }
+
+  .text-logo {
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: var(--primary); /* Adapts to theme */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, var(--primary), var(--heading-text-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 </style>

@@ -1,17 +1,22 @@
 {
-  "name": "dashy",
+  "name": "laowang-nav",
   "version": "3.1.1",
   "license": "MIT",
   "main": "server",
-  "author": "Alicia Sykes <alicia@omg.lol> (https://aliciasykes.com)",
+  "author": "LaoWang",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tony-wang1990/laowang-nav"
+  },
+  "description": "A modern, responsive, and highly customizable dashboard for your personal server. Built for you by LaoWang.",
   "scripts": {
     "start": "node server",
-    "dev": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service serve",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build",
+    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider vue-cli-service serve",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build",
     "lint": "vue-cli-service lint",
     "pm2-start": "npx pm2 start server.js",
     "build-watch": "vue-cli-service build --watch --mode production",
-    "build-and-start": "NODE_OPTIONS=--openssl-legacy-provider npm-run-all --parallel build start",
+    "build-and-start": "cross-env NODE_OPTIONS=--openssl-legacy-provider npm-run-all --parallel build start",
     "validate-config": "node services/config-validator",
     "health-check": "node services/healthcheck",
     "dependency-audit": "npx improved-yarn-audit --ignore-dev-deps"
@@ -59,6 +64,7 @@
     "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.1",
     "copy-webpack-plugin": "6.4.0",
+    "cross-env": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-vue": "^7.9.0",

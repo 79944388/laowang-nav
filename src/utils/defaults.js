@@ -1,15 +1,15 @@
 module.exports = {
   /* Default pageInfo object, used if user does not specify their own */
   pageInfo: {
-    title: 'Dashy',
+    title: 'LaoWang Nav',
     description: '',
     navLinks: [],
-    footerText: '',
+    footerText: 'LaoWang Nav - 您的个人导航站',
   },
   /* Default appConfig to be used, if user does not specify their own */
   appConfig: {},
   /* Default language code */
-  language: 'en',
+  language: 'cn',
   /* The page to use as the starting homepage */
   startingView: 'default',
   /* Default icon size to be applied on initial load */
