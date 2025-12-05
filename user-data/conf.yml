@@ -6,8 +6,8 @@ appConfig:
 
 # Main content - An array of sections, each containing an array of items
 pageInfo:
-  title: LaoWang Nav
-  description: 您的个人导航站
+  title: My secret base
+  description: 个人导航站
 sections:
 
   - name: Home
